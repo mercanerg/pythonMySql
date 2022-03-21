@@ -30,3 +30,6 @@ for i in result:
 
 con.commit()
 print("The sum of records = ", dbcursor.rowcount)
+
+dbcursor.close()
+con.close()

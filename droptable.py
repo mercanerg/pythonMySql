@@ -12,3 +12,5 @@ except:
 
 dbcursor = con.cursor()
 dbcursor.execute("DROP TABLE products")
+dbcursor.close()
+con.close()

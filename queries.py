@@ -35,5 +35,6 @@ dbcursor.execute(sql)
 result = dbcursor.fetchall()
 for i in result:
     print(i[0], "\t", "$", i[1])
+con.commit()
 dbcursor.close()
 con.close()

@@ -32,4 +32,6 @@ for i in result:
   print(i[0], i[1], "$", i[2])
 
 print(f"listed {dbcursor.rowcount} rows")
+con.commit()
+dbcursor.close()
 con.close()

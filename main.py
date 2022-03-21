@@ -49,5 +49,7 @@ for i in dbcursor:
 sql = "CREATE TABLE products (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), price int)"
 if not is_control:
     dbcursor.execute(sql)
+con.commit()
+dbcursor.close()
 con.close()
 
